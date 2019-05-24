@@ -1,0 +1,70 @@
+/* Geral */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+.main {
+  padding: 10px;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+/* Cards */
+
+.card {
+  width:60%;
+  margin: 20px auto;
+  min-height: 240px;
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: height 1s;
+  background-color: #fff;
+  box-shadow: 3px 3px 0px 0px rgba(206,206,206,1);
+}
+
+.card-image {
+  width: 360px;
+  float: left;
+  margin-right: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.collapsed {
+  height: 25px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 90%;
+  }
+
+  .card-image {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-image {
+    width: 100%;
+  }
+}
+
